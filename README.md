@@ -87,7 +87,7 @@ target_link_libraries( target_name ${OpenCV_LIBS}  )
 
 ```sh
 $ mkdir -p "build" 
-$ %cd "build"
+$ cd "build"
 ```
 
 ```sh
