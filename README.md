@@ -38,3 +38,17 @@ You can set `CMAKE_TOOLCHAIN_FILE` in CMakeLists.txt.
 cmake_minimum_required(VERSION 3.9)
 set( CMAKE_TOOLCHAIN_FILE "[path to vcpkg]/scripts/buildsystems/vcpkg.cmake"  )
 ```
+
+## Setup opencv using vcpkg from source
+
+```sh
+$ ./vcpkg/vcpkg search opencv
+```
+
+To install the opencv libraries for your project, run:
+
+```sh
+$ ./vcpkg/vcpkg install opencv
+```
+
+Building opencv from source will take much more time. You can use `export` command to export opencv binaries. Exported binaries will be much easier to setup opencv, you just need to unzip exported zip file link it to to CMakeLists.txt using `DCMAKE_TOOLCHAIN_FILE`.
