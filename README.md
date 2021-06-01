@@ -51,4 +51,4 @@ To install the opencv libraries for your project, run:
 $ ./vcpkg/vcpkg install opencv
 ```
 
-Building opencv from source will take much more time. You can use `export` command to export opencv binaries. Exported binaries will be much easier to setup opencv, you just need to unzip exported zip file link it to to CMakeLists.txt using `DCMAKE_TOOLCHAIN_FILE`.
+Building opencv from source will take much more time. You can use `export` command once you build opencv first time on your system to export opencv binaries. Exported binaries will be much easier to setup opencv on another system with same os, you just need to unzip exported zip file link it to to CMakeLists.txt using `DCMAKE_TOOLCHAIN_FILE`.
