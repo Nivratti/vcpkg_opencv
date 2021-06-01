@@ -82,3 +82,15 @@ set( CMAKE_TOOLCHAIN_FILE "[path-to-vcpkg-export]/scripts/buildsystems/vcpkg.cma
 find_package( OpenCV REQUIRED )
 target_link_libraries( target_name ${OpenCV_LIBS}  )
 ```
+
+## Build Your project
+
+```sh
+!mkdir -p "build" 
+%cd "build"
+```
+
+```sh
+!cmake ..
+!make -j$(nproc)
+```
