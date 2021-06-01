@@ -65,6 +65,12 @@ $ ./vcpkg/vcpkg export opencv4 --zip
 
 It will create zip file.
 
+Binary Packages:
+
+Ubuntu 18.04:
+[opencv4](https://drive.google.com/drive/folders/1lEsj3K8Ut9KGmV6jaD_mWilphN4gYPXK?usp=sharing)
+
+
 ## Using vcpkg exported opencv 
 
 To use exported opencv bundle in another system. First Download and unzip exported zip file.
