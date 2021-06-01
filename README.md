@@ -64,3 +64,21 @@ $ ./vcpkg/vcpkg export opencv4 --zip
 ```
 
 It will create zip file.
+
+## Using vcpkg exported opencv 
+
+To use exported opencv bundle in another system. First Download and unzip exported zip file.
+
+Link `CMAKE_TOOLCHAIN_FILE` in CMakeLists.txt.
+
+```sh
+cmake_minimum_required(VERSION 3.9)
+set( CMAKE_TOOLCHAIN_FILE "[path-to-vcpkg-export]/scripts/buildsystems/vcpkg.cmake" )
+
+# And after that you can set your project name
+# ......
+# Find Package
+
+find_package( OpenCV REQUIRED )
+target_link_libraries( target_name ${OpenCV_LIBS}  )
+```
