@@ -86,11 +86,11 @@ target_link_libraries( target_name ${OpenCV_LIBS}  )
 ## Build Your project
 
 ```sh
-!mkdir -p "build" 
-%cd "build"
+$ mkdir -p "build" 
+$ %cd "build"
 ```
 
 ```sh
-!cmake ..
-!make -j$(nproc)
+$ cmake ..
+$ make -j$(nproc)
 ```
